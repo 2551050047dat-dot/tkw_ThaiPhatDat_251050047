@@ -110,6 +110,7 @@
   }
   .btn-primary { @apply bg-brand-600 text-white hover:bg-brand-700; }
   .btn-ghost   { @apply border border-line text-ink hover:bg-surface-alt; }
+  .btn-outline { @apply border border-line bg-transparent text-ink hover:bg-surface-alt; }
   .btn-lg      { @apply px-7 py-3.5 text-base; }
 
   /* Thẻ dùng chung — buổi 2 dùng cho tính năng và bảng giá */

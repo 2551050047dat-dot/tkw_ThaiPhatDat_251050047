@@ -1,7 +1,7 @@
 {
-  "name": "vua-starter-buoi1",
+  "name": "thaiphatdat-saas",
   "version": "1.0.0",
-  "description": "Starter buổi 1 — Vựa — môn Thực hành Thiết kế Web",
+  "description": "ThaiPhatDat — SaaS tra cứu và quản lý thông tin game bóng đá",
   "scripts": {
     "dev": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
     "build": "tailwindcss -i ./src/input.css -o ./dist/output.css --minify"
