@@ -1,0 +1,14 @@
+{
+  "name": "thaiphatdat-saas",
+  "version": "1.0.0",
+  "description": "ThaiPhatDat — SaaS tra cứu và quản lý thông tin game bóng đá",
+  "scripts": {
+    "dev": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
+    "build": "tailwindcss -i ./src/input.css -o ./dist/output.css --minify"
+  },
+  "dependencies": {
+    "@tailwindcss/cli": "^4.3.3",
+    "tailwindcss": "^4.3.3"
+  },
+  "private": true
+}

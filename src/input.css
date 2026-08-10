@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-brand-50: #fff6f3;
+  --color-brand-100: #f9e5df;
+  --color-brand-200: #f0c5b9;
+  --color-brand-500: #bf6d5c;
+  --color-brand-600: #a95c4e;
+  --color-brand-700: #8d473f;
+  --color-brand-900: #3a221e;
+
+  --color-gold-100: #f8f0d9;
+  --color-gold-300: #e7d2a8;
+  --color-gold-500: #c89d4b;
+
+  --color-ink: #2c221f;
+  --color-muted: #684f49;
+  --color-line: #e9ded8;
+  --color-surface: #fffdfc;
+  --color-surface-alt: #f7f2ee;
+
+  --font-display: "Cormorant Garamond", "Times New Roman", serif;
+  --font-body: "Manrope", "Segoe UI", sans-serif;
+
+  --radius-card: 1rem;
+  --radius-pill: 9999px;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+  }
+
+  body {
+    @apply bg-surface text-ink font-body antialiased;
+  }
+
+  h1, h2, h3 {
+    @apply font-display tracking-tight;
+  }
+
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-brand-600;
+  }
+}
+
+@layer components {
+  .section {
+    @apply mx-auto w-full max-w-6xl px-5 py-20 lg:py-28;
+  }
+
+  .eyebrow {
+    @apply text-xs font-semibold uppercase tracking-[0.18em] text-brand-600;
+  }
+
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-full px-5 py-2.5 text-sm font-semibold transition-colors duration-150 disabled:cursor-not-allowed disabled:opacity-50;
+  }
+
+  .btn-primary {
+    @apply bg-brand-600 text-white hover:bg-brand-700;
+  }
+
+  .btn-ghost {
+    @apply border border-line text-ink hover:bg-surface-alt;
+  }
+
+  .card {
+    @apply rounded-card border border-line bg-surface p-6 shadow-sm;
+  }
+}
